@@ -6,7 +6,7 @@
 </script>
 <section
   class=" text-white py-4 d-flex"
-  style="height: 80vh;background-color: #023E8A; align-items:center"
+  style="height: 80vh; align-items:center"
 >
   <div class="container w-50" style=" margin-left: 64px;">
     <h1 class="display-11 fw-bold">
@@ -19,6 +19,7 @@
       quickly, reliably, and hassle-free.
     </p> -->
     <div class="mt-4 pe-3">
+      <!-- svelte-ignore a11y_mouse_events_have_key_events -->
       <a
         href="/contact"
         id="letsGo"

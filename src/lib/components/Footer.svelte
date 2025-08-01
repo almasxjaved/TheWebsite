@@ -1,4 +1,4 @@
-<footer class="bg-dark text-white py-4 mt-5">
+<footer class=" text-white py-4 mt-5">
   <div class="container text-center">
     <p class="mb-2">&copy; {new Date().getFullYear()} TaskConnect. All rights reserved.</p>
     <div class="d-flex justify-content-center gap-3">
