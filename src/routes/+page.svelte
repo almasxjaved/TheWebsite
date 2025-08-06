@@ -10,8 +10,8 @@
 
 <Hero />
 <Problem />
-<Solution />
+<!-- <Solution />
 <HowItWorks />
 <Wallet />
 <BusinessModel />
-<CTA />
+<CTA /> -->

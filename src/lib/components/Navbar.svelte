@@ -1,33 +1,57 @@
-<nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="height: 11vh;">
-  
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="/" style="#008080">
-      <!-- Replace with your logo later -->
-      TaskConnect
-    </a>
-    <!-- <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon text-dark">dsadsa</span>
-    </button> -->
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/services">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contact">Contact</a>
-        </li>
-      </ul>
-    </div>
+<script>
+ 
+</script>
+
+<nav class="navbar">
+  <div class="nav-content">
+    <div class="logo">LOGO</div>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
   </div>
 </nav>
+
+<style>
+  .navbar {
+    background-color: #0a0a23;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+
+  .nav-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bolder;
+    transition: color 0.3s;
+  }
+
+  .nav-links a:hover {
+    color: royalblue;
+  }
+</style>
