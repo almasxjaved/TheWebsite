@@ -12,5 +12,5 @@
 <!-- <Solution /> -->
 <HowItWorks />
 <Wallet />
-<!-- <BusinessModel />
-<CTA /> -->
+<!-- <BusinessModel /> -->
+<!-- <CTA /> -->

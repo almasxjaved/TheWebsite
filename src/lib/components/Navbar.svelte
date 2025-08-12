@@ -67,7 +67,7 @@
 
 <nav>
   <div class="nav-container">
-    <div class="logo">TaskConnect</div>
+    <div class="logo">TaskRent</div>
 
     <button class="menu-toggle" on:click={() => isOpen = !isOpen}>
       {#if isOpen}
