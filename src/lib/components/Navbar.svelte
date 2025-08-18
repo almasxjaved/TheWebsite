@@ -2,6 +2,27 @@
   let isOpen = false;
 </script>
 
+<nav>
+  <div class="nav-container">
+    <a class="logo" href="/">TaskRent</a>
+
+    <button class="menu-toggle" on:click={() => isOpen = !isOpen}>
+      {#if isOpen}
+        ✕
+      {:else}
+        ☰
+      {/if}
+    </button>
+
+    <div class="nav-links {isOpen ? 'open' : ''}">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/how_it_works">How It Works</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
 <style>
   nav {
     background-color: #0c0f2c; 
@@ -20,6 +41,8 @@
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    color: #4169e1;
+    text-decoration: none;
   }
 
   .menu-toggle {
@@ -64,24 +87,3 @@
     }
   }
 </style>
-
-<nav>
-  <div class="nav-container">
-    <div class="logo">TaskRent</div>
-
-    <button class="menu-toggle" on:click={() => isOpen = !isOpen}>
-      {#if isOpen}
-        ✕
-      {:else}
-        ☰
-      {/if}
-    </button>
-
-    <div class="nav-links {isOpen ? 'open' : ''}">
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/how-it-works">How It Works</a>
-      <a href="/contact">Contact</a>
-    </div>
-  </div>
-</nav>
