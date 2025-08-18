@@ -83,13 +83,13 @@
 
   .how-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(90, 122, 255, 0.4); /* royal blue glow */
+    box-shadow: 0 0 20px rgba(90, 122, 255, 0.4);
   }
 
   .icon {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: #5a7aff; /* royal blue */
+    color: #5a7aff;
   }
 
   .how-card h3 {

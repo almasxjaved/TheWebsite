@@ -83,7 +83,7 @@
   .backward-thing {
     width: 450px;
     height: 340px;
-    background-color: #5a7aff;
+    background-color: #106ca4;
     position: absolute;
     right: 22px;
     top: 60px;

@@ -13,4 +13,4 @@
 <HowItWorks />
 <Wallet />
 <!-- <BusinessModel /> -->
-<!-- <CTA /> -->
+<CTA />
