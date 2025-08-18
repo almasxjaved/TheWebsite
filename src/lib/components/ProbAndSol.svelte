@@ -10,31 +10,54 @@
     "Reliable, pre-verified team completing tasks for you.",
     "User-friendly interface with minimal steps.",
     "Real-time updates on progress.",
-    "Secure payments and transparent pricing."
+    "Secure payments and transparent pricing.",
   ];
 </script>
 
+<div class="container">
+
+  <div class="problem">
+    <div class="circle problem-circle"></div>
+    <h2>Problem</h2>
+    <p>{problem}</p>
+  </div>
+
+  <img src="/images/arrow.png" class="arrow" alt="" />
+
+  <div class="solution">
+    <div class="circle solution-circle"></div>
+    <h2>Our Solution</h2>
+    <ul>
+      {#each solutions as sol}
+        <li>{sol}</li>
+      {/each}
+    </ul>
+  </div>
+</div>
+
 <style>
   .container {
-    display: flex;  
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    padding: 4rem 2rem 1rem 2rem ;
+    padding: 4rem 2rem 1rem 2rem;
     position: relative;
     max-width: 1200px;
     margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
-  .problem, .solution {
+  .problem,
+  .solution {
     flex: 1;
     padding: 0.5rem 1.5rem;
     border-radius: 60px;
     position: relative;
     z-index: 2;
     min-height: 250px;
-    background-color: #f4f4f4;
-
+    background: #021b26;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
   }
   h2 {
     margin-bottom: 1rem;
@@ -43,7 +66,7 @@
 
   p {
     line-height: 1.6;
-    color: #333;
+    color: white;
   }
 
   ul {
@@ -52,10 +75,9 @@
 
   li {
     margin-bottom: 0.8rem;
-    color: #333;
+    color: white;
   }
 
-  /* Circular background designs */
   .circle {
     position: absolute;
     border-radius: 50%;
@@ -66,7 +88,7 @@
   .circle.problem-circle {
     width: 300px;
     height: 300px;
-    background: rgb(65, 105, 225) ;
+    background: rgb(65, 105, 225);
     top: -50px;
     left: -80px;
   }
@@ -79,7 +101,6 @@
     right: -80px;
   }
 
-  /* Arrow between columns */
   .arrow {
     position: relative;
     transform: rotate(90deg);
@@ -88,17 +109,7 @@
     flex-shrink: 0;
   }
 
-  /* .arrow::before {
-    content: "➜";
-    font-size: 2rem;
-    color: #555;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  } */
-
-  /* Responsive */
+  
   @media (max-width: 768px) {
     .container {
       flex-direction: column;
@@ -118,26 +129,3 @@
     }
   }
 </style>
-
-<div class="container">
-  <!-- Problem Side -->
-  <div class="problem">
-    <div class="circle problem-circle"></div>
-    <h2>Problem</h2>
-    <p>{problem}</p>
-  </div>
-
-  <!-- Arrow -->
-  <img src="/images/arrow.png" class="arrow" alt="">
-
-  <!-- Solution Side -->
-  <div class="solution">
-    <div class="circle solution-circle"></div>
-    <h2>Our Solution</h2>
-    <ul>
-      {#each solutions as sol}
-        <li>{sol}</li>
-      {/each}
-    </ul>
-  </div>
-</div>
