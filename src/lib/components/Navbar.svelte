@@ -1,57 +1,89 @@
 <script>
- 
+  let isOpen = false;
 </script>
 
-<nav class="navbar">
-  <div class="nav-content">
-    <div class="logo">LOGO</div>
-    <ul class="nav-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/contact">Contact</a></li>
-    </ul>
+<nav>
+  <div class="nav-container">
+    <a class="logo" href="/">TaskRent</a>
+
+    <button class="menu-toggle" on:click={() => isOpen = !isOpen}>
+      {#if isOpen}
+        ✕
+      {:else}
+        ☰
+      {/if}
+    </button>
+
+    <div class="nav-links {isOpen ? 'open' : ''}">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/how_it_works">How It Works</a>
+      <a href="/contact">Contact</a>
+    </div>
   </div>
 </nav>
 
 <style>
-  .navbar {
-    background-color: #0a0a23;
+  nav {
+    background-color: #0c0f2c; 
     padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    font-family: Arial, Helvetica, sans-serif;
-    
+    color: white;
   }
 
-  .nav-content {
-    max-width: 1200px;
-    margin: auto;
+  .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .logo {
     font-size: 1.5rem;
-    color: white;
     font-weight: bold;
+    color: #4169e1;
+    text-decoration: none;
+  }
+
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
   }
 
   .nav-links {
-    list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
   }
 
   .nav-links a {
     text-decoration: none;
-    color: #ffffff;
-    font-weight: bolder;
-    transition: color 0.3s;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
   }
 
   .nav-links a:hover {
-    color: royalblue;
+    color: #4169e1; 
+  }
+
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      gap: 1rem;
+      padding-top: 1rem;
+    }
+
+    .nav-links.open {
+      display: flex;
+    }
   }
 </style>

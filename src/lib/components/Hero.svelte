@@ -1,67 +1,92 @@
-<section class="hero">
-  <h1>WELCOME</h1>
-  <p>We are here to help you with your daily life errands :)</p>
-  <button class="btn">LEARN MORE</button>
-</section>
+
+<div class="hero-section">
+  <div class="hero-content">
+    <h1>We run the errands, you run the show. 😉</h1>
+    <p>From pickup to drop-off, we’ll make every task feel like a treat</p>
+    <div class="buttons">
+      <button class="btn-primary">Get started</button>
+      <button class="btn-secondary">Book a demo</button>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <div class="backward-thing"></div>
+    <img src="/images/her.jpg" alt="HeroImage" />
+  </div>
+</div>
 
 <style>
-  .hero {
+  .hero-section {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
     align-items: center;
-    padding: 2rem;
-    text-align: center;
-    background: linear-gradient(135deg, #010f2b, #1a0033);
-    background-image:
-      radial-gradient(circle at 30% 30%, rgba(0,0,255,0.2), transparent 50%),
-      radial-gradient(circle at 70% 70%, rgba(128,0,128,0.2), transparent 50%);
-    color: white;
-    min-height: calc(100vh - 140px); 
+    opacity: 0.8;
+    justify-content: space-around;
+    background-color: #0b1e2d;
     position: relative;
+    min-height: 85vh;
+  }
+
+  .hero-content {
+    max-width: 50%;
+    color: white;
   }
 
   h1 {
     font-size: 3rem;
-    /* text-shadow: 0 0 10px #4fc3f7; */
-    margin-bottom: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 1.2;
   }
 
   p {
-    max-width: 600px;
-    font-size: 1.2rem;
-    color: #ccc;
-    margin-bottom: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #b0c4d4;
+    margin-bottom: 30px;
+    max-width: 400px;
   }
 
-  .btn {
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    color: white;
-    background-color: rgba(0, 150, 255, 0.7);
+  .buttons {
+    display: flex;
+    gap: 15px;
+  }
+
+  .btn-primary {
+    background-color: #5a7aff;
     border: none;
-    font-weight: bolder;
-    border-radius: 25px;
-    box-shadow: 0 0 15px rgba(65,105,225,0.6);
-    transition: 0.3s;
+    padding: 12px 24px;
+    border-radius: 5px;
+    color: #ffff;
+    font-size: 1rem;
+    font-weight: 500;
     cursor: pointer;
   }
 
-  .btn:hover {
+  .btn-secondary {
     background-color: white;
-    color: rgba(0, 150, 255, 0.7);
-    /* box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); */
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    color: #0b1e2d;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
   }
-
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 2.2rem;
-    }
-
-    p {
-      font-size: 1rem;
-    }
+  .hero-image {
+    height: 60vh;
+  }
+  .hero-image img {
+    max-width: 480px;
+    min-height: 100%;
+    position: relative;
+  }
+  .backward-thing {
+    width: 450px;
+    height: 340px;
+    background-color: #106ca4;
+    position: absolute;
+    right: 22px;
+    top: 60px;
+    z-index: -1;
   }
 </style>
