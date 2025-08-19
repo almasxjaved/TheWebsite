@@ -1,92 +1,43 @@
+<section class="w-100" style="background-color:#0b1e2d; min-height:85vh; font-family:Arial, Helvetica, sans-serif;">
+  <div class="container h-100 d-flex align-items-center">
+    <div class="row w-100 align-items-center justify-content-between g-4">
 
-<div class="hero-section">
-  <div class="hero-content">
-    <h1>We run the errands, you run the show. 😉</h1>
-    <p>From pickup to drop-off, we’ll make every task feel like a treat</p>
-    <div class="buttons">
-      <button class="btn-primary">Get started</button>
-      <button class="btn-secondary">Book a demo</button>
+      <!-- Left: content -->
+      <div class="col-12 col-md-6 text-white">
+        <h3 class="display-3 fw-bold lh-sm mb-3">
+          We run the errands, you run the show. 😉
+        </h3>
+
+        <p class="mb-4" style="max-width:400px; color:#b0c4d4;">
+          From pickup to drop-off, we’ll make every task feel like a treat
+        </p>
+
+        <div class="d-flex gap-3">
+          <button
+            class="btn px-4 py-2 fw-semibold"
+            style="background-color:#5a7aff; border-color:#5a7aff; color:#fff;"
+          >
+            Get started
+          </button>
+
+          <button
+            class="btn btn-light px-4 py-2 fw-semibold"
+            style="color:#0b1e2d;"
+          >
+            Book a demo
+          </button>
+        </div>
+      </div>
+
+      <!-- Right: image -->
+      <div class="col-12 col-md-5 text-center">
+        <img
+          src="/images/her.jpg"
+          alt="HeroImage"
+          class="img-fluid rounded-`1"
+          style="max-width:480px; height:60vh; object-fit:cover; object-position:center;"
+        />
+      </div>
     </div>
   </div>
-
-  <div class="hero-image">
-    <div class="backward-thing"></div>
-    <img src="/images/her.jpg" alt="HeroImage" />
-  </div>
-</div>
-
-<style>
-  .hero-section {
-    display: flex;
-    font-family: Arial, Helvetica, sans-serif;
-    align-items: center;
-    opacity: 0.8;
-    justify-content: space-around;
-    background-color: #0b1e2d;
-    position: relative;
-    min-height: 85vh;
-  }
-
-  .hero-content {
-    max-width: 50%;
-    color: white;
-  }
-
-  h1 {
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-    line-height: 1.2;
-  }
-
-  p {
-    font-size: 1rem;
-    color: #b0c4d4;
-    margin-bottom: 30px;
-    max-width: 400px;
-  }
-
-  .buttons {
-    display: flex;
-    gap: 15px;
-  }
-
-  .btn-primary {
-    background-color: #5a7aff;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 5px;
-    color: #ffff;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-  }
-
-  .btn-secondary {
-    background-color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 5px;
-    color: #0b1e2d;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-  }
-  .hero-image {
-    height: 60vh;
-  }
-  .hero-image img {
-    max-width: 480px;
-    min-height: 100%;
-    position: relative;
-  }
-  .backward-thing {
-    width: 450px;
-    height: 340px;
-    background-color: #106ca4;
-    position: absolute;
-    right: 22px;
-    top: 60px;
-    z-index: -1;
-  }
-</style>
+</section>
