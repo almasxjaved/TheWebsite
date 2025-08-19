@@ -18,6 +18,7 @@
       <a href="/">Home</a>
       <a href="/about">About</a>
       <a href="/how_it_works">How It Works</a>
+      <a href="/services">Services</a>
       <a href="/contact">Contact</a>
     </div>
   </div>
