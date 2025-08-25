@@ -1,43 +1,69 @@
-<section class="w-100" style="background-color:#0b1e2d; min-height:85vh; font-family:Arial, Helvetica, sans-serif;">
-  <div class="container h-100 d-flex align-items-center">
-    <div class="row w-100 align-items-center justify-content-between g-4">
 
-      <!-- Left: content -->
-      <div class="col-12 col-md-6 text-white">
-        <h3 class="display-3 fw-bold lh-sm mb-3">
-          We run the errands, you run the show. 😉
-        </h3>
+<section class="w-100 text-white py-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      
+      <div class="col-12 bg-black col-lg-6">
+        <span class="badge bg-dark text-white-50 mb-3 px-3 py-2">
+          Now Available in Gilgit-Baltistan
+        </span>
 
-        <p class="mb-4" style="max-width:400px; color:#b0c4d4;">
-          From pickup to drop-off, we’ll make every task feel like a treat
+        <h1 class="fw-bold lh-sm display-4 display-md-3 display-sm-5">
+          Your Tasks, Our Community
+        </h1>
+
+        <p class="text-secondary mb-4">
+          Connect with trusted locals to get your errands done while creating
+          earning opportunities for your community.
         </p>
 
-        <div class="d-flex gap-3">
-          <button
-            class="btn px-4 py-2 fw-semibold"
-            style="background-color:#5a7aff; border-color:#5a7aff; color:#fff;"
-          >
-            Get started
+        <div class="d-flex gap-3 mb-4">
+          <button class="btn btn-light fw-semibold px-4 py-2">
+            Get Started Today
           </button>
+          <button class="btn btn-dark border fw-semibold px-4 py-2">
+            Learn More
+          </button>
+        </div>
 
-          <button
-            class="btn btn-light px-4 py-2 fw-semibold"
-            style="color:#0b1e2d;"
-          >
-            Book a demo
-          </button>
+        <div class="d-flex flex-wrap gap-4">
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-check-circle-fill text-success"></i>
+            <span>Trusted Community</span>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-shield-lock-fill text-success"></i>
+            <span>Secure Payments</span>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-headset text-success"></i>
+            <span>24/7 Support</span>
+          </div>
         </div>
       </div>
 
-      <!-- Right: image -->
-      <div class="col-12 col-md-5 text-center">
-        <img
-          src="/images/her.jpg"
-          alt="HeroImage"
-          class="img-fluid rounded-`1"
-          style="max-width:480px; height:60vh; object-fit:cover; object-position:center;"
-        />
+      <div class="col-12 col-lg-6 text-center">
+        <div class="bg-warning rounded-4 d-flex justify-content-center align-items-center p-4" 
+             style="min-height:400px;">
+          <img src="/images/hero-phone.png" alt="Hero Image" class="img-fluid" style="max-height:300px;" />
+        </div>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+  /* Smaller fonts on mobile */
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 1.75rem !important;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+    button {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+</style>
