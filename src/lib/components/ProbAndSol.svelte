@@ -1,131 +1,63 @@
 <script>
-  const problem = `
-    Many people struggle to manage daily errands efficiently,
-    wasting hours coordinating schedules or finding reliable help.
-    This leads to stress, missed  /, and reduced productivity.
-  `;
-
-  const solutions = [
-    "Simple platform to post errands instantly.",
-    "Reliable, pre-verified team completing tasks for you.",
-    "User-friendly interface with minimal steps.",
-    "Real-time updates on progress.",
-    "Secure payments and transparent pricing.",
+  const points = [
+    {
+      icon: "bi-clock-history",
+      title: "Time & Energy Waste",
+      desc: "Days spent traveling for simple 30-minute tasks",
+    },
+    {
+      icon: "bi-cash-stack",
+      title: "High Travel Costs",
+      desc: "Travel and accommodation costs often exceed task value",
+    },
+    {
+      icon: "bi-geo-alt-fill",
+      title: "Geographic Barriers",
+      desc: "Remote locations make simple errands incredibly difficult",
+    },
   ];
 </script>
 
-<div class="container">
+<section class="w-100  text-white py-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      
+      <div class="col-12 col-lg-6">
+        <div class="bg-warning rounded-4 p-2 d-flex justify-content-center align-items-center">
+          <!-- <img 
+            src="/images/problem.jpg" 
+            alt="Problem Image" 
+            class="img-fluid rounded-4"
+            style="object-fit:cover; max-height:400px; width:100%;"
+          /> -->
+        </div>
+      </div>
 
-  <div class="problem">
-    <div class="circle problem-circle"></div>
-    <h2>Problem</h2>
-    <p>{problem}</p>
+      <div class="col-12 col-lg-6 bg-black">
+        <span class="badge bg-danger mb-3 px-3 py-2">The Problem</span>
+
+        <h2 class="fw-bold lh-sm mb-3">
+          Distance Shouldn't Define Your Limitations
+        </h2>
+
+        <p class="text-secondary mb-4">
+          In Gilgit-Baltistan, simple tasks like document submission or
+          buying medicines require traveling up to 12 hours to the city,
+          costing more than the task itself.
+        </p>
+
+        <div class="d-flex flex-column gap-3">
+          {#each points as p}
+            <div class="d-flex align-items-start gap-3">
+              <i class={`bi ${p.icon} text-danger fs-4`}></i>
+              <div>
+                <h6 class="fw-bold mb-1">{p.title}</h6>
+                <p class="text-secondary mb-0">{p.desc}</p>
+              </div>
+            </div>
+          {/each}
+        </div>
+      </div>
+    </div>
   </div>
-
-  <img src="/images/arrow.png" class="arrow" alt="" />
-
-  <div class="solution">
-    <div class="circle solution-circle"></div>
-    <h2>Our Solution</h2>
-    <ul>
-      {#each solutions as sol}
-        <li>{sol}</li>
-      {/each}
-    </ul>
-  </div>
-</div>
-
-<style>
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    padding: 4rem 2rem 1rem 2rem;
-    position: relative;
-    max-width: 1200px;
-    margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .problem,
-  .solution {
-    flex: 1;
-    padding: 0.5rem 1.5rem;
-    border-radius: 60px;
-    position: relative;
-    z-index: 2;
-    min-height: 250px;
-    background: #021b26;
-    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
-  }
-  h2 {
-    margin-bottom: 1rem;
-    color: #0c0f2c;
-  }
-
-  p {
-    line-height: 1.6;
-    color: white;
-  }
-
-  ul {
-    padding-left: 1.5rem;
-  }
-
-  li {
-    margin-bottom: 0.8rem;
-    color: white;
-  }
-
-  .circle {
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.15;
-    z-index: 1;
-  }
-
-  .circle.problem-circle {
-    width: 300px;
-    height: 300px;
-    background: rgb(65, 105, 225);
-    top: -50px;
-    left: -80px;
-  }
-
-  .circle.solution-circle {
-    width: 300px;
-    height: 300px;
-    background: rgba(173, 216, 230, 1);
-    bottom: -50px;
-    right: -80px;
-  }
-
-  .arrow {
-    position: relative;
-    transform: rotate(90deg);
-    width: 40px;
-    height: 40px;
-    flex-shrink: 0;
-  }
-
-  
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-    }
-    .arrow {
-      transform: rotate(90);
-    }
-    .circle.problem-circle {
-      top: -40px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    .circle.solution-circle {
-      bottom: -40px;
-      right: 50%;
-      transform: translateX(50%);
-    }
-  }
-</style>
+</section>
