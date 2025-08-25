@@ -1,92 +1,69 @@
 
-<div class="hero-section">
-  <div class="hero-content">
-    <h1>We run the errands, you run the show. 😉</h1>
-    <p>From pickup to drop-off, we’ll make every task feel like a treat</p>
-    <div class="buttons">
-      <button class="btn-primary">Get started</button>
-      <button class="btn-secondary">Book a demo</button>
+<section class="w-100 text-white py-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      
+      <div class="col-12 bg-black col-lg-6">
+        <span class="badge bg-dark text-white-50 mb-3 px-3 py-2">
+          Now Available in Gilgit-Baltistan
+        </span>
+
+        <h1 class="fw-bold lh-sm display-4 display-md-3 display-sm-5">
+          Your Tasks, Our Community
+        </h1>
+
+        <p class="text-secondary mb-4">
+          Connect with trusted locals to get your errands done while creating
+          earning opportunities for your community.
+        </p>
+
+        <div class="d-flex gap-3 mb-4">
+          <button class="btn btn-light fw-semibold px-4 py-2">
+            Get Started Today
+          </button>
+          <button class="btn btn-dark border fw-semibold px-4 py-2">
+            Learn More
+          </button>
+        </div>
+
+        <div class="d-flex flex-wrap gap-4">
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-check-circle-fill text-success"></i>
+            <span>Trusted Community</span>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-shield-lock-fill text-success"></i>
+            <span>Secure Payments</span>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-headset text-success"></i>
+            <span>24/7 Support</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6 text-center">
+        <div class="bg-warning rounded-4 d-flex justify-content-center align-items-center p-4" 
+             style="min-height:400px;">
+          <img src="/images/hero-phone.png" alt="Hero Image" class="img-fluid" style="max-height:300px;" />
+        </div>
+      </div>
     </div>
   </div>
-
-  <div class="hero-image">
-    <div class="backward-thing"></div>
-    <img src="/images/her.jpg" alt="HeroImage" />
-  </div>
-</div>
+</section>
 
 <style>
-  .hero-section {
-    display: flex;
-    font-family: Arial, Helvetica, sans-serif;
-    align-items: center;
-    opacity: 0.8;
-    justify-content: space-around;
-    background-color: #0b1e2d;
-    position: relative;
-    min-height: 85vh;
-  }
-
-  .hero-content {
-    max-width: 50%;
-    color: white;
-  }
-
-  h1 {
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-    line-height: 1.2;
-  }
-
-  p {
-    font-size: 1rem;
-    color: #b0c4d4;
-    margin-bottom: 30px;
-    max-width: 400px;
-  }
-
-  .buttons {
-    display: flex;
-    gap: 15px;
-  }
-
-  .btn-primary {
-    background-color: #5a7aff;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 5px;
-    color: #ffff;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-  }
-
-  .btn-secondary {
-    background-color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 5px;
-    color: #0b1e2d;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-  }
-  .hero-image {
-    height: 60vh;
-  }
-  .hero-image img {
-    max-width: 480px;
-    min-height: 100%;
-    position: relative;
-  }
-  .backward-thing {
-    width: 450px;
-    height: 340px;
-    background-color: #106ca4;
-    position: absolute;
-    right: 22px;
-    top: 60px;
-    z-index: -1;
+  /* Smaller fonts on mobile */
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 1.75rem !important;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+    button {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+    }
   }
 </style>

@@ -1,7 +1,8 @@
 <script>
-  import { onMount } from 'svelte';
-  import Navbar from '$lib/components/Navbar.svelte';
-  import Footer from '$lib/components/Footer.svelte';
+  import "bootstrap/dist/css/bootstrap.min.css";
+  import { onMount } from "svelte";
+  import Navbar from "$lib/components/Navbar.svelte";
+  import Footer from "$lib/components/Footer.svelte";
 
   let canvas;
   let ctx;
@@ -19,15 +20,19 @@
       this.y = Math.random() * canvas.height;
       this.vx = (Math.random() - 0.5) * 0.4;
       this.vy = (Math.random() - 0.5) * 0.4;
-      this.radius = 1.5; 
-
+      this.radius = 1.5;
     }
 
     update() {
       this.x += this.vx;
       this.y += this.vy;
 
-      if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) {
+      if (
+        this.x < 0 ||
+        this.x > canvas.width ||
+        this.y < 0 ||
+        this.y > canvas.height
+      ) {
         this.reset();
       }
     }
@@ -35,8 +40,8 @@
     draw() {
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(0, 150, 255, 0.7)';
-      ctx.shadowColor = 'rgba(0, 150, 255, 0.2)';
+      ctx.fillStyle = "rgba(255, 215, 0, 0.7)"; /* Yellow particles */
+      ctx.shadowColor = "rgba(255, 215, 0, 0.2)";
       ctx.shadowBlur = 5;
       ctx.fill();
       ctx.shadowBlur = 0;
@@ -56,7 +61,7 @@
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(0, 150, 255, ${opacity * 0.3})`;
+          ctx.strokeStyle = `rgba(255, 215, 0, ${opacity * 0.3})`; /* Yellow connections */
           ctx.lineWidth = 1;
           ctx.stroke();
         }
@@ -80,7 +85,7 @@
   onMount(() => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    ctx = canvas.getContext('2d');
+    ctx = canvas.getContext("2d");
 
     particles = [];
     for (let i = 0; i < numParticles; i++) {
@@ -89,12 +94,22 @@
 
     animate();
 
-    window.addEventListener('resize', () => {
+    window.addEventListener("resize", () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
     });
   });
 </script>
+
+<canvas bind:this={canvas}></canvas>
+
+<div class="layout-wrapper">
+  <Navbar />
+  <main>
+    <slot />
+  </main>
+  <Footer />
+</div>
 
 <style>
   canvas {
@@ -118,13 +133,3 @@
     color: white;
   }
 </style>
-
-<canvas bind:this={canvas}></canvas>
-
-<div class="layout-wrapper">
-  <Navbar />
-  <main>
-    <slot />
-  </main>
-  <Footer />
-</div>
