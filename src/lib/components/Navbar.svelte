@@ -2,11 +2,17 @@
   let isOpen = false;
 </script>
 
-<nav>
-  <div class="nav-container">
-    <a class="logo" href="/">TaskRent</a>
+<nav class="navbar navbar-expand-md" style="background-color: #000; padding: 1rem 2rem;">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="/" style="color: #FFD700; font-size: 1.5rem;">
+      TaskRent
+    </a>
 
-    <button class="menu-toggle" on:click={() => isOpen = !isOpen}>
+    <button
+      class="navbar-toggler text-warning border-0"
+      type="button"
+      on:click={() => (isOpen = !isOpen)}
+    >
       {#if isOpen}
         ✕
       {:else}
@@ -14,77 +20,30 @@
       {/if}
     </button>
 
-    <div class="nav-links {isOpen ? 'open' : ''}">
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/how_it_works">How It Works</a>
-      <a href="/services">Services</a>
-      <a href="/contact">Contact</a>
+    <div class={"collapse navbar-collapse" + (isOpen ? " show" : "")}>
+      <ul class="navbar-nav ms-auto gap-3">
+        <li class="nav-item">
+          <a class="nav-link fw-medium" href="/" style="color: white;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-medium" href="/about" style="color: white;">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-medium" href="/how_it_works" style="color: white;">How It Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-medium" href="/services" style="color: white;">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-medium" href="/contact" style="color: white;">Contact</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
 
 <style>
-  nav {
-    background-color: #0c0f2c; 
-    padding: 1rem 2rem;
-    color: white;
-  }
-
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #4169e1;
-    text-decoration: none;
-  }
-
-  .menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
-
-  .nav-links {
-    display: flex;
-    gap: 2rem;
-  }
-
-  .nav-links a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-
-  .nav-links a:hover {
-    color: #4169e1; 
-  }
-
-  @media (max-width: 768px) {
-    .menu-toggle {
-      display: block;
-    }
-
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      gap: 1rem;
-      padding-top: 1rem;
-    }
-
-    .nav-links.open {
-      display: flex;
-    }
+  .nav-link:hover {
+    color: #FFD700 !important; /* Yellow on hover */
   }
 </style>
