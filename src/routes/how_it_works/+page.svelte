@@ -1,5 +1,5 @@
 <script>
-    import HowItWorks from "$lib/components/HowItWorks.svelte";
+    import HowToConnect from "$lib/components/HowToConnect.svelte";
 </script>
 
 <HowItWorks />
