@@ -6,11 +6,13 @@
   import Wallet from '$lib/components/Wallet.svelte';
   import BusinessModel from '$lib/components/BusinessModel.svelte';
   import CTA from '$lib/components/CTA.svelte';
+  import HowItWorks from '$lib/components/HowItWorks.svelte';
 </script>
 
 <Hero />
 <Problem/>
 <Solution />
+<HowItWorks />
 <HowToConnect />
 <Wallet />
 <!-- <BusinessModel /> -->
