@@ -1,5 +1,4 @@
 <script>
-  // No extra logic for now – static content
 </script>
 
 <section class="py-5 text-light">
@@ -10,7 +9,6 @@
       Here's exactly how our platform works for both task posters and helpers.
     </p>
 
-    <!-- Posters vs Helpers -->
     <div class="row mb-5">
       <div class="col-md-6 mb-3">
         <div class="p-4 border rounded bg-black h-100">
@@ -26,7 +24,6 @@
       </div>
     </div>
 
-    <!-- For Task Posters -->
     <h3 class="fw-bold text-warning mb-4">For Task Posters</h3>
     <div class="row align-items-center mb-5">
       <div class="col-md-6">
@@ -44,7 +41,6 @@
       </div>
     </div>
 
-    <!-- Example Tasks -->
     <h4 class="fw-bold text-warning mb-4">Example Tasks You Can Post</h4>
     <div class="row mb-5">
       <div class="col-md-4 mb-3">
@@ -58,7 +54,6 @@
       </div>
     </div>
 
-    <!-- For Helpers -->
     <h3 class="fw-bold text-warning mb-4">For Helpers</h3>
     <div class="row align-items-center mb-5">
       <div class="col-md-6 mb-3">
@@ -77,10 +72,8 @@
   </div>
 </section>
 
-<!-- Second Section -->
 <section class="py-5 bg-black text-light">
   <div class="container text-center">
-    <!-- Why Become a Helper -->
     <h3 class="fw-bold text-warning mb-4">Why Become a Helper?</h3>
     <div class="row mb-5">
       <div class="col-md-4 mb-3"><div class="p-4 border rounded h-100">💸 <br/>Flexible Earning</div></div>
@@ -88,7 +81,6 @@
       <div class="col-md-4 mb-3"><div class="p-4 border rounded h-100">⭐ <br/>Build Reputation</div></div>
     </div>
 
-    <!-- Safety & Trust -->
     <h3 class="fw-bold text-warning mb-4">Safety & Trust</h3>
     <div class="row mb-5">
       <div class="col-md-3 mb-3"><div class="p-4 border rounded h-100">✅ Verified Profiles</div></div>
@@ -97,12 +89,6 @@
       <div class="col-md-3 mb-3"><div class="p-4 border rounded h-100">📞 24/7 Support</div></div>
     </div>
 
-    <!-- CTA -->
-    <h3 class="fw-bold mb-3">Ready to Get Started?</h3>
-    <p class="text-secondary">Join thousands already using TaskConnect to make life easier and earn extra income.</p>
-    <div class="d-flex justify-content-center gap-3 mt-4">
-      <a href="/post-task" class="btn btn-warning fw-bold px-4">Start Posting Tasks</a>
-      <a href="/become-helper" class="btn btn-outline-warning fw-bold px-4">Become a Helper</a>
-    </div>
+   
   </div>
 </section>
