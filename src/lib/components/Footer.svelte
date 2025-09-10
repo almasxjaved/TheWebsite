@@ -1,97 +1,49 @@
-<script>
-  const year = new Date().getFullYear();
-</script>
+<footer class="bg-dark text-light pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-bold text-warning">TaskConnect</h5>
+        <p class="small">
+          Connecting communities through trust and collaboration in Gilgit-Baltistan.
+        </p>
+      </div>
 
-<style>
-  footer {
-    background: #000d1a;
-    color: #fff;
-    padding: 3rem 2rem;
-    font-family: 'Segoe UI', sans-serif;
-  }
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-bold text-warning">Platform</h6>
+        <ul class="list-unstyled">
+          <li><a href="/how-it-works" class="text-light text-decoration-none">How it Works</a></li>
+          <li><a href="/pricing" class="text-light text-decoration-none">Pricing</a></li>
+          <li><a href="/safety" class="text-light text-decoration-none">Safety</a></li>
+          <li><a href="/support" class="text-light text-decoration-none">Support</a></li>
+        </ul>
+      </div>
 
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-bold text-warning">Company</h6>
+        <ul class="list-unstyled">
+          <li><a href="/about" class="text-light text-decoration-none">About Us</a></li>
+          <li><a href="/careers" class="text-light text-decoration-none">Careers</a></li>
+          <li><a href="/press" class="text-light text-decoration-none">Press</a></li>
+          <li><a href="/blog" class="text-light text-decoration-none">Blog</a></li>
+        </ul>
+      </div>
 
-  .footer-col {
-    flex: 1 1 200px;
-    min-width: 180px;
-  }
-
-  .footer-col h4 {
-    font-size: 1rem;
-    margin-bottom: 0.8rem;
-    color: #00cfff;
-  }
-
-  .footer-col p,
-  .footer-col a {
-    color: #ccc;
-    font-size: 0.9rem;
-    text-decoration: none;
-    line-height: 1.6;
-  }
-
-  .footer-col a:hover {
-    color: #00cfff;
-  }
-
-  .brand {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #fff;
-    margin-bottom: 1rem;
-  }
-
-  .social-icons {
-    margin-top: 1rem;
-    display: flex;
-    gap: 1rem;
-  }
-
-  .social-icons a {
-    color: #ccc;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-  }
-
-  .social-icons a:hover {
-    color: #00cfff;
-  }
-
-  .footer-bottom {
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 0.8rem;
-    color: #888;
-  }
-</style>
-
-<footer>
-  <div class="footer-container">
-    <div class="footer-col">
-      <div class="brand">TaskConnect</div>
-      <p>The agency for impatient brands®</p>
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-bold text-warning">Legal</h6>
+        <ul class="list-unstyled">
+          <li><a href="/privacy" class="text-light text-decoration-none">Privacy Policy</a></li>
+          <li><a href="/terms" class="text-light text-decoration-none">Terms of Service</a></li>
+          <li><a href="/cookies" class="text-light text-decoration-none">Cookie Policy</a></li>
+          <li><a href="/refund" class="text-light text-decoration-none">Refund Policy</a></li>
+        </ul>
+      </div>
     </div>
 
-    <div class="footer-col">
-      <h4>LONDON</h4>
-      <p>taskoutsource@taskconnect.com</p>
-      <p>+44 20 7987 7571</p>
-      <p>Unit 302, Metropolitan Wharf,<br />70 Wapping Wall, London E1W 3SS</p>
-      <a href="#">SEE ON MAP →</a>
-    </div>
+    <hr class="border-secondary" />
 
-    <div class="footer-col">
-      <h4>BUENOS AIRES</h4>
-      <p>argentina@taskconnect.com</p>
+    <div class="d-flex justify-content-between align-items-center small text-secondary">
+      <p class="mb-0">© 2025 TaskConnect. All rights reserved. Built for Gilgit-Baltistan.</p>
+      <p class="mb-0">🚀 Empowering Communities</p>
     </div>
-
   </div>
 </footer>
