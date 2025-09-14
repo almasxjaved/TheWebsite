@@ -18,7 +18,7 @@
         </p>
 
         <div class="d-flex gap-3 mb-4">
-          <button class="btn btn-light fw-semibold px-4 py-2">
+          <button class="btn btn-danger fw-semibold px-4 py-2">
             Get Started Today
           </button>
           <button class="btn btn-dark border fw-semibold px-4 py-2">

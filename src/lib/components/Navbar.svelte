@@ -26,7 +26,7 @@
           <a class="nav-link fw-medium" href="/" style="color: white;">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fw-medium" href="/about" style="color: white;">About</a>
+          <a class="nav-link fw-medium" href="/aboutus" style="color: white;">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link fw-medium" href="/how_it_works" style="color: white;">How It Works</a>
