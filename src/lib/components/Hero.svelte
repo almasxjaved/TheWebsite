@@ -43,9 +43,10 @@
       </div>
 
       <div class="col-12 col-lg-6 text-center">
-        <div class="bg-warning rounded-4 d-flex justify-content-center align-items-center p-4" 
+        <div class="bg-warning rounded-4 d-flex justify-content-center align-items-center" 
              style="min-height:400px;">
-          <img src="/images/hero-phone.png" alt="Hero Image" class="img-fluid" style="max-height:300px;" />
+          <!-- svelte-ignore a11y_img_redundant_alt -->
+          <img src="/images/helpinghand.png" alt="Hero Image" class="img-fluid" style="max-height:600px;" />
         </div>
       </div>
     </div>
