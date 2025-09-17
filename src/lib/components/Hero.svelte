@@ -18,7 +18,7 @@
         </p>
 
         <div class="d-flex gap-3 mb-4">
-          <button class="btn btn-danger fw-semibold px-4 py-2">
+          <button class="btn btn-secondary border fw-semibold px-4 py-2">
             Get Started Today
           </button>
           <button class="btn btn-dark border fw-semibold px-4 py-2">
@@ -43,10 +43,9 @@
       </div>
 
       <div class="col-12 col-lg-6 text-center">
-        <div class="bg-warning rounded-4 d-flex justify-content-center align-items-center" 
-             style="min-height:400px;">
+        <div class="bg-warning rounded-4 d-flex justify-content-center align-items-center w-100" >
           <!-- svelte-ignore a11y_img_redundant_alt -->
-          <img src="/images/helpinghand.png" alt="Hero Image" class="img-fluid" style="max-height:600px;" />
+          <img src="/images/helpinghand.png" alt="Hero Image" class="img-fluid w-100" style="max-height:300px;" />
         </div>
       </div>
     </div>
