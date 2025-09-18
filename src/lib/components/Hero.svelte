@@ -1,8 +1,10 @@
+<script>
+  import AppButton from "./UIComponents/AppButton.svelte";
+</script>
 
 <section class="w-100 text-white py-5">
   <div class="container">
     <div class="row align-items-center g-5">
-      
       <div class="col-12 bg-black col-lg-6">
         <span class="badge bg-dark text-white-50 mb-3 px-3 py-2">
           Now Available in Gilgit-Baltistan
@@ -18,12 +20,15 @@
         </p>
 
         <div class="d-flex gap-3 mb-4">
-          <button class="btn btn-secondary border fw-semibold px-4 py-2">
-            Get Started Today
-          </button>
-          <button class="btn btn-dark border fw-semibold px-4 py-2">
-            Learn More
-          </button>
+          <AppButton
+            classes="btn btn-secondary border fw-semibold px-4 py-2"
+            label="Get Started Today"
+          />
+
+          <AppButton
+            classes="btn btn-dark border fw-semibold px-4 py-2"
+            label="Learn More"
+          />
         </div>
 
         <div class="d-flex flex-wrap gap-4">
@@ -43,9 +48,16 @@
       </div>
 
       <div class="col-12 col-lg-6 text-center">
-        <div class="bg-warning rounded-4 d-flex justify-content-center align-items-center w-100" >
+        <div
+          class="bg-warning rounded-4 d-flex justify-content-center align-items-center w-100"
+        >
           <!-- svelte-ignore a11y_img_redundant_alt -->
-          <img src="/images/helpinghand.png" alt="Hero Image" class="img-fluid w-100" style="max-height:300px;" />
+          <img
+            src="/images/helpinghand.png"
+            alt="Hero Image"
+            class="img-fluid w-100"
+            style="max-height:300px;"
+          />
         </div>
       </div>
     </div>
@@ -53,7 +65,6 @@
 </section>
 
 <style>
-  /* Smaller fonts on mobile */
   @media (max-width: 576px) {
     h1 {
       font-size: 1.75rem !important;
