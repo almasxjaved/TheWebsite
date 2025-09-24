@@ -6,7 +6,7 @@
 
 {#each sections as { title, text, imgSrc, imgAlt, reverse }}
   <div class="row align-items-center mb-5 {reverse ? 'flex-md-row-reverse' : ''}">
-    <div class="col-md-6 mb-4 mb-md-0">
+    <div class="col-md-6 mb-4 mb-md-0 bg-black">
       <h2 class="fw-bold text-warning mb-3 display-6">{title}</h2>
       <p class="fs-5 lh-lg text-light-emphasis">{text}</p>
     </div>
