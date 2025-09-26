@@ -3,37 +3,21 @@
   let email = "";
   let message = "";
   let status = "";
+  
+  async function handleSubmit(e) {
+    e.preventDefault();
 
-  async function handleSubmit(event) {
-    event.preventDefault();
+    const res = await fetch("/api/send-whatsapp", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, message })
+    });
 
-    const form = event.target;
-    const data = new FormData(form);
-
-    try {
-      const response = await fetch(form.action, {
-        method: form.method,
-        body: data,
-        headers: {
-          Accept: "application/json",
-        },
-      });
-
-      if (response.ok) {
-        status = "✅ Thanks for your submission!";
-        name = "";
-        email = "";
-        message = "";
-      } else {
-        const result = await response.json();
-        if (result.errors) {
-          status = result.errors.map((error) => error.message).join(", ");
-        } else {
-          status = "❌ Oops! There was a problem submitting your form.";
-        }
-      }
-    } catch (error) {
-      status = "❌ Oops! There was a problem submitting your form.";
+    if (res.ok) {
+      status = "✅ Message sent successfully!";
+      name = email = message = "";
+    } else {
+      status = "❌ Failed to send message.";
     }
   }
 </script>
@@ -43,9 +27,7 @@
   <h1 class="h2 fw-bold mb-4 text-center text-warning">Contact Us</h1>
 
   <form
-    action="https://formspree.io/f/mwprkzdq"
-    method="POST"
-    on:submit={handleSubmit}
+    on:submit|preventDefault={handleSubmit}
     class="bg-black p-4 rounded shadow-lg border border-secondary"
   >
     <!-- Name -->
