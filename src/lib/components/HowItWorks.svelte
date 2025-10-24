@@ -99,6 +99,14 @@
       text: "Rating System"
     },
     {
+      icon: "👥",
+      text: "Role-based Access Model"
+    },
+    {
+      icon: "🔐",
+      text: "Multi-factor Authentication"
+    },
+    {
       icon: "🔒",
       text: "Secure Payment"
     },
