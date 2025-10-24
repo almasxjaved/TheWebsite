@@ -17,7 +17,6 @@
   <div class="container">
     <div class="row align-items-center g-5 ">
       
-      <!-- Left: Text -->
       <div class="col-12 col-lg-6 bg-black">
         <span class="badge bg-light text-dark mb-3 px-3 py-2">
           Our Solution
@@ -32,7 +31,6 @@
           to assist, creating a win-win ecosystem for everyone.
         </p>
 
-        <!-- Feature Cards -->
         <div class="d-flex flex-column flex-md-row gap-3">
           {#each features as f}
             <div class="border border-secondary rounded-4 p-3 flex-fill">
@@ -46,12 +44,6 @@
 
       <div class="col-12 col-lg-6">
           <div class="bg-warning rounded-4 p-2 d-flex justify-content-center align-items-center">
-          <!-- <img 
-            src="/images/problem.jpg" 
-            alt="Problem Image" 
-            class="img-fluid rounded-4"
-            style="object-fit:cover; max-height:400px; width:100%;"
-          /> -->
         </div>
       </div>
     </div>
