@@ -42,6 +42,10 @@
           </div>
           <div class="d-flex align-items-center gap-2">
             <i class="bi bi-headset text-success"></i>
+            <span>Role-based Access Control</span>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-headset text-success"></i>
             <span>24/7 Support</span>
           </div>
         </div>
